@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\rockwell-rv",
+    "\\rockwell-rv\\src",
+    "\\rockwell-rv\\src\\vendor",
+    "\\rockwell-rv\\src\\vendor\\dist",
+    "\\rockwell-rv\\src\\vendor\\dist\\jquerv",
+    "\\rockwell-rv\\src\\vendor\\dist\\jquery-ui",
+    "\\rockwell-rv\\src\\vendor\\dist\\parsley"
+  ],
+  "SelectedNode": "\\rockwell-rv\\src\\vendor\\dist\\jquery-ui",
+  "PreviewInSolutionExplorer": false
+}

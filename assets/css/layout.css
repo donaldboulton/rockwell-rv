@@ -1,0 +1,182 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Table of Content
+==================================================
+	#Site Styles
+	#Media Queries
+	#Font-Face */
+
+/* #Site Styles
+================================================== */
+
+@import url(http://fonts.googleapis.com/css?family=Rokkitt:400,700);
+
+body 			{ background:url(../images/bg.jpg) repeat;
+				  font-family:'Rokkitt', Georgia, 'Times New Roman', serif; 
+				  font-size:18px; 
+				  font-weight:400; 
+				  color:#87816c; 
+				  text-shadow:0px 1px 0px #fff; 
+				  line-height:1.4em; }
+.multiplebgs body 	{ background:url(/assets/images/bg-top.png) 50% 0% no-repeat,
+					  url(/assets/images/bg-footer.png) 35% 100% no-repeat,
+					  url(/assets/images/bg.jpg) repeat; }
+.no-multiplebgs body { background:url(../images/bg.jpg) repeat; }
+h1,h2,h3,
+h4,h5,h6 		{ font-family:'Rokkitt', Georgia, 'Times New Roman', serif; color:#447a80; font-weight:700; }
+p				{display:normal  }
+a, a:visited	{ color:#6a8d18; }
+a:hover			{ color:#6a8d18; text-decoration:none; }
+a img			{ outline:none; }
+strong			{ color:#87816c; }
+ul li 			{ list-style:outside disc; margin-left:15px; margin-bottom:8px; }
+img				{ max-width:100%; height:auto; box-sizing:border-box; }
+
+h1 				{ background:url(/assets/images/rockwell-logo.png) no-repeat; text-indent:-9999px; width:301px; height:119px; margin-bottom:0; }
+h2				{ font-size:30px; line-height:35px; }
+
+#contact h2,
+#info h2,
+#resInfo		{ text-align:center; }
+
+#header 		{ margin-bottom:60px; }
+.container 		{ background:url(/assets/images/separator.png) repeat-x; padding:60px 0; }
+.container#top,
+.container#info,
+.container#footer 	{ background:none; }
+/*.container#top 	{ background:url(../images/bg-top.png) 50% 0 no-repeat; }
+.container#info 	{ background:url(../images/bg-top.png) 50% 100% no-repeat; }*/
+
+#googleMap		{ text-align:center; }
+#googleMap p	{ margin-bottom:0px; }
+
+#resInfo		{ padding-top:60px; }
+
+ul#nav			{ margin-top:60px; margin-bottom:0; }
+ul#nav li		{ display:inline; list-style:none; margin-left:20px; font-size:19px; }
+ul#nav li a		{ font-weight:700; display:block; text-decoration:none; }
+#footer 		{ text-align:center; }
+
+#gallery a		{text-decoration:none;  }
+#gallery img	{ width:140px; height:140px; overflow:hidden; margin:10px; }
+#gallery img,
+#googleMap img,
+#nearby img,
+#slider-wrapper { border:3px solid #87816c; -webkit-border-radius:10px; -moz-border-radius:10px; -o-border-radius:10px; border-radius:10px; }
+#slider-wrapper	{ margin-bottom:30px; border:3px solid #87816c; }
+#slider-wrapper img { -webkit-border-radius:7px; -moz-border-radius:7px; -o-border-radius:7px; border-radius:7px; }
+
+input[type="text"], 
+textarea 		{ width:260px; padding:15px 9px; color:#a19f95; font-family:'Rokkitt', Georgia, 'Times New Roman', serif; font-size:16px; -webkit-border-radius:4px; -moz-border-radius:4px; -o-border-radius:4px; border-radius:4px; }
+textarea 		{ min-height:156px; background:url(../images/speech.png) #d7d5c7 95% 6% no-repeat; }
+input[type="submit"], input[type="text"], textarea { border:1px solid rgba(184,182,171,.5); box-shadow:inset 0px 1px 3px #cac8b5; }
+input[type="text"]#fname, input[type="text"]#lname { background:url(../images/user.png) #d7d5c7 95% 50% no-repeat; }
+input[type="text"]#email { background:url(../images/email.png) #d7d5c7 95% 50% no-repeat; }
+input[type="text"].parsley-success,
+textarea.parsley-success { border:1px solid #789f1b; }
+input[type="text"].parsley-error,
+textarea.parsley-error { border:1px solid red; }
+input[type="text"]:focus, textarea:focus { background-color:#fff !important; color:#aba99b; }
+input[type="submit"] { background:#789f1b; 
+					   font-family:'Rokkitt', Georgia, 'Times New Roman', serif; 
+					   color:#fff; 
+					   text-shadow:0px 1px 0px #000; 
+					   border:1px solid #607827;
+					   border-bottom-width:3px;
+					   -webkit-box-shadow:inset 0px 0px 0px 1px #a0bc56;
+					   -moz-box-shadow:inset 0px 0px 0px 1px #a0bc56;
+					   box-shadow:inset 0px 0px 0px 1px #a0bc56; 
+					   font-weight:400; 
+					   font-size:18px; 
+					   display:block; 
+					   margin:0 auto; 
+					   -webkit-appearance:none; 
+					   padding:12px 60px; 
+					   -webkit-transition:0.4s all linear;
+					   -moz-transition:0.4s all linear;
+					   -o-transition:0.4s all linear;
+					   transition:0.4s all linear; }
+input[type="submit"]:hover { background:#658517; border:1px solid #607827; border-bottom-width:3px; color:#fff; }
+
+#error			{ display:none }
+#error ul		{ margin-bottom:0; }
+#error li		{ list-style:none; margin-left:0; color:red; }
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {
+	ul#nav 			{ margin-top:40px; }}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+	h1 				{ width:220px; height:90px; background-size:220px 90px; }
+	ul#nav			{ margin-top:40px; }
+	ul#nav li		{ margin-left:9px; font-size:18px; }
+	#gallery img	{ width:130px; height:130px; margin:2px; }
+	input[type="text"], textarea { width:200px; }
+	/*textarea 		{ max-width:200px; }*/ }
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+	#header 		{ margin-bottom:30px; }
+	#resInfo		{ padding-top:30px; }
+	.container		{ padding:30px 0; }
+	h1 				{ margin:0 auto; }
+	ul#nav li		{ float:none; display:block; margin-left:0; font-size:22px; line-height:1.3em; }
+	form			{ overflow:hidden; }
+	input[type="submit"] { width:100%; }}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+	input[type="text"], textarea { width:400px; }
+	textarea { max-width:400px; }}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+	.container#top { padding-top:30px; }
+	#gallery img { height:140px; overflow:hidden; width:140px; margin:2px; }
+	input[type="text"], textarea { width:280px; }
+	textarea { max-width:280px; }}
+	
+	/* Retina Screens */
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+	h1 				{ background:url(../images/rockwell-logo-2x.png) no-repeat;
+				  	  background-size:300px 118px;
+				  	  width:300px;
+				  	  height:118px; }
+	.container 		{ background:url(../images/separator-2x.png) repeat-x;
+				  	  background-size:4px 2px; }
+	input[type="text"]#fname, input[type="text"]#lname { background:url(../images/user2x.png) #d7d5c7 95% 50% no-repeat; background-size:23px 25px; }
+	input[type="text"]#email { background:url(../images/email2x.png) #d7d5c7 95% 50% no-repeat; background-size:28px 19px; }
+	textarea 		{ background:url(../images/speech2x.png) #d7d5c7 95% 6% no-repeat; background-size:29px 26px; }}
+	
+	@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 959px), (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 959px) {
+	h1				{ background-size:220px 90px; width:220px; height:90px; }}
+
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot?iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/
